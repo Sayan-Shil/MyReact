@@ -1,0 +1,54 @@
+/* App.css */
+
+/* General body styling */
+body {
+  background-color: #000000;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+/* Container for the mouse position display */
+.mouse-position-container {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Styling for the main heading */
+#mouse-text {
+  color: #c0c3c7;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Container for the coordinate values */
+#position {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#position p {
+  margin: 0;
+}
+
+#position p:first-child {
+  color: #8c00ff;
+}
+
+#position p:last-child {
+  color: #ffffff;
+}
