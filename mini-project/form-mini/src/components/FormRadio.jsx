@@ -7,8 +7,8 @@ function FormRadio({value, onChange }) {
         <input
           type="radio"
           name="gender"
-          value="male"
-          checked={value === "male"}   
+          value="Male"
+          checked={value === "Male"}   
           onChange={onChange}
         />
         Male
@@ -18,8 +18,8 @@ function FormRadio({value, onChange }) {
         <input
           type="radio"
           name="gender"
-          value="female"
-          checked={value === "female"} 
+          value="Female"
+          checked={value === "Female"} 
           onChange={onChange}
         />
         Female
