@@ -1,0 +1,68 @@
+/*
+ * ParentComponent.css
+ * This file provides styles for the ParentComponent.
+ */
+
+/* Main container for the parent component */
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding doesn't affect the element's total width and height */
+}
+
+/* Styles for the mount/unmount button */
+.parent-container button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #3b82f6; /* A nice blue color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Adds space between the button and the MouseTracker component */
+}
+
+/* Button hover effect */
+.parent-container button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button active (click) effect */
+.parent-container button:active {
+  background-color: #1d4ed8;
+  transform: translateY(0);
+}
+
+/* Styles for the button when the tracker is mounted (shows "Unmount Tracker") */
+.parent-container button:active:hover {
+  background-color: #b91c1c; /* A red color to signify unmounting */
+}
+
+/* A subtle fade-in animation for the MouseTracker component when it mounts */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the MouseTracker component when it's rendered */
+.mouse-tracker-mounted {
+  animation: fadeIn 0.5s ease-out;
+}
